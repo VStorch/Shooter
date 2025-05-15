@@ -441,6 +441,8 @@ GameObject:
   - component: {fileID: 3352221604080633601}
   - component: {fileID: 6921312261840434472}
   - component: {fileID: 5335835628406913634}
+  - component: {fileID: 5130599607598881929}
+  - component: {fileID: 3337374675520446274}
   m_Layer: 0
   m_Name: Invader
   m_TagString: Untagged
@@ -531,7 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582d71768e5904f459b3e97b29194b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 10
+  magnitude: 0.3
 --- !u!114 &5335835628406913634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,6 +549,42 @@ MonoBehaviour:
   pontuacao: 1
   tempoExtra: 0
   prefabExplosao: {fileID: 6925711026083109919, guid: 2c47e12b973ef8443b67c4b258126dc9, type: 3}
+--- !u!114 &5130599607598881929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2889692173246107289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47af3168550784e3a932e53789748764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitAfterSeconds: 5
+  exitAnimationSeconds: 0.4
+--- !u!95 &3337374675520446274
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2889692173246107289}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d8bd20037a27f647a53e22b444a8a0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3090473155602535606
 GameObject:
   m_ObjectHideFlags: 0
